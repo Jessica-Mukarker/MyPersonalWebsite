@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> my new website</title>
+	<style>
+ 
+		/* Styling the body */
+		body {
+			margin: 0;
+			padding: 0;
+		}
+	.header {
+  padding: 20px;
+  text-align: center;
+  background: rgba(178, 179, 211);
+  color: white;
+
+ 
+}
+.footer {
+	text-align:justify;
+  background: rgba(178, 179, 211);
+  color: white;
+  font-size: 20px;
+  		
+}
+
+
+.row {
+  display:inline-flex;
+
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+		/* Styling section, giving background
+			image and dimensions */
+		section {
+			width: 100%;
+			height: 200vh;
+			background:
+url('https://www.shutterstock.com/image-illustration/happy-doodle-elements-600w-563220280.jpg');
+			background-size: cover;
+            background-size: 100%;
+		}
+		
+		/* Styling the left floating section */
+		section .leftBox {
+            font-family: sans-serif;
+			width: 50%;
+			height: 90%;
+			float: left;
+			padding: 50px;
+			box-sizing: border-box;
+			
+		}
+		
+		/* Styling the background of
+			left floating section */
+		section .leftBox .content {
+            font-family: sans-serif;
+			color: #fff;
+			background: rgba(0, 0, 0, 0.5);
+			padding: 40px;
+			transition: .5s;
+			position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+ 
+  padding: 50px;
+  font-size: 20px;
+		}
+		
+		
+		
+		/* Styling the hover effect
+			of left floating section */
+		section .leftBox .content:hover {
+			background: #e91e63;
+			height: 50%;
+			
+			
+		}
+		
+		
+		/* Styling the header of left
+			floating section */
+		section .leftBox .content h1 {
+            font-family: sans-serif;
+			margin: 0;
+            margin-bottom: 20px;
+			padding: 0;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		
+		/* Styling the paragraph of
+			left floating section */
+		section .leftBox .content p {
+            font-family: sans-serif;
+			margin: 10px 0 0;
+			padding: 0;
+		}
+		
+        section .leftBox .content img {
+			
+			padding: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+              width: 200px;
+              height: 200px ;
+
+		}
+		section .info ul li img {
+			position: relative;
+			box-sizing: border-box;
+			width: 150px;
+			height: 150px; 
+			
+		}
+		.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  background-color: #2196F3;
+  padding: 5px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+ 
+  text-align: center;
+}
+.item1 {
+	grid-area: right ;
+}
+.item2{
+	grid-area: right ;
+}
+.item3{grid-area:right ;
+
+}
+.item4{
+	grid-area:right ;
+}
+		/* Styling the three info section */
+		section .info {
+			position: relative;
+            font-family: sans-serif;
+			width: 50%;
+			height: 105%;
+			
+			float: right;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the links of
+		the info section */
+		section .info ul {
+			position: absolute;
+			top: 50.5%;
+			transform: translateY(-50%);
+			margin: 0;
+			padding: 50px;
+			box-sizing: border-box;
+		}
+		
+		/* Styling the lists of the event section */
+		section .info ul li {
+			font-style:italic;
+			list-style: none;
+			background: #fff;
+			box-sizing: border-box;
+			height: 240px;
+			margin: 15px;
+		}
+		
+		/* Styling the time class of info section */
+		section .info ul li .time {
+			position: relative;
+			padding: 30px;
+			background: #262626;
+			box-sizing: border-box;
+			width: 30%;
+			height: 100%;
+			float: left;
+			text-align: center;
+			transition: .5s;
+		}
+		
+		/* Styling the hover effect
+			of info section */
+		section .info ul li:hover .time {
+			background: #e91e63;
+			
+		}
+		
+		/* Styling the header of time
+			class of info section */
+		section .info ul li .time h2 {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 60px;
+			line-height: 30px;
+		}
+		
+		/* Styling the texts of time
+		class of info section */
+		section .info ul li .time h2 span {
+			font-size: 30px;
+		}
+		
+		/* Styling the details
+		class of info section */
+		section .info ul li .details {
+			padding: 5%;
+			background: #fff;
+			box-sizing: border-box;
+			width: 70%;
+			height: 100%;
+			float: left;
+            
+		}
+
+		
+		/* Styling the header of the
+		details class of info section */
+		section .info ul li .details h3 {
+			position: relative;
+			margin: 0;
+	
+			font-size: 20px;
+		}
+		
+
+		section .info ul li .details dl {
+			position: relative;
+			margin: 5px;
+			padding: 0;
+			font-size: 15px;
+
+		}
+
+		/* Styling the lists of details
+		class of info section */
+		section .info ul li .details p {
+			position: relative;
+			margin: 5px;
+			padding: 0;
+			font-size: 14px;
+		}
+		
+		/* Styling the links of details
+		class of info section */
+		section .info ul li .details a {
+			display: inline-flex;
+		
+			padding: 10px 30px;
+			border: 1px solid #262626;
+			margin-top: 5px;
+			
+			transition: .5s;
+		}
+		
+		/* Styling the details class's hover effect */
+		section .info ul li .details a:hover {
+			background: #e91e63;
+			color: #fff;
+			border-color: #e91e63;
+		}
+
+		@media screen and (max-width: 700px) {
+			section {
+			width: 100%;
+			height: 200vh;
+			background:rgba(138, 148, 174);
+			background-size: cover;
+            background-size: 100%;
+		}
+		.content{
+			font-family: sans-serif;
+			color: #fff;
+			background: rgba(0, 0, 0, 0.5);
+			padding: 40px;
+			transition: .5s;
+		}
+		section .info ul li img {
+			width: 50%;
+			height: 90%; 
+			position: relative;
+			box-sizing: border-box;
+			float: left;
+		}
+		section .leftBox {
+            font-family: sans-serif;
+			width: 40%;
+			height: 90%;
+			position: left;
+			padding: 40px;
+			box-sizing: border-box;
+			
+		}
+		section .info {
+			position: left;
+            font-family: sans-serif;
+			width: 50%;
+			height: 90%;
+			background: rgba(0, 0, 0, 0.5);
+			float: right;
+			box-sizing: border-box;
+		} 
+		}
+
+	</style>
+</head>
+
+<body>
+	<section>
+
+		<div class="header" style="font-size:20px ;">
+		<p><strong>&#128151;&#128151;	Welcome to my personal web &#128151;&#128151;</strong></p>
+
+		<p>in my website you can know every detailed things about me such as my hobbies </p>
+
+		</div>
+		
+		<div class="leftBox">
+			<div class="content">
+				<p style="font-size:xx-large"><strong>
+					My Personal Web  &#128151;</strong>
+				</p>
+				<br>
+				<br>
+               
+                <img src="images/me.jpg" alt="my pic"   width="450" height="700">
+				
+                <p style="text-align:center"><b> Hi my name is Jessica Mukarker <br>I am 20 years old <br> I am from Palestine <br> I live in the hightest place in beit jala<br> I know lots of languages such as Arabic , English,French and Korean<br>I am currently at my third year studying Software engineering <br>at Bethlehem University </b></p>
+              
+
+			</div>
+		</div>
+
+		<div class="info">
+			
+			<ul>
+				<li>
+					
+					<div class="time">
+						<h2>
+							
+                          <img src="images/bu.jpg" alt="bu pic">
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							University info
+						</h3>
+						
+<p ><b>is a Catholic university in the city of Bethlehem in the West Bank, Palestine.
+    </b></p>
+
+
+						<a href="https://www.bethlehem.edu/gateways/bu-academic-portal-buap-faculty-and-staff/">Bethlehem University </a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							
+							<img src="images/major.jpg" alt="my major">
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+						 Major (Software engineering)
+						</h3>
+						
+<p> <b>study the scientific and mathematical basis of computer software
+     &#128187;.
+	  
+    </b>
+						</p>
+
+						<a href="https://en.wikipedia.org/wiki/Software_engineering">Software engineering</a>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+
+				<li>
+					<div class="time">
+						<h2>
+							
+							<img src="images/beitJala.jpg" alt="my city" >
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							My City (beitJala)
+						</h3>
+						
+                        <p><b> Situated on a hill adjacent to Bethlehem,<br>
+                             it has existed for thousands of years
+                             
+                              </b></p>
+              
+
+						<a href="https://en.wikipedia.org/wiki/Beit_Jala">Beit_Jala</a>
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+
+                <li>
+					<div class="time">
+						<h2>
+							<img src="images/hop.png" alt="my hobbies" >
+						</h2>
+					</div>
+					<div class="details">
+						<h3>
+							My Ambitons
+						</h3>
+						
+<p> <b>some of  my ambitions are 
+   Dabkeh(Palastenian traditional dance) and 
+   bees. take a peak 
+   &#128521;
+					</b></p>
+                      <a href=" https://baladi.ps/about/about-us/"> My Dabkeh Center </a><a  href=" https://www.facebook.com/Bees.Agape/videos/1092707064784819">  My work with bees </a>
+						
+					</div>
+					<div style="clear:both;"></div>
+				</li>
+
+
+
+
+</ul>
+</div></section>
+<div class="footer">
+	<h1> for any further question please contact me on any possible way </h1>
+	<div class="row">
+		<div class="column"> 
+<br>
+<br>
+                                                                                  
+<p ><a href="https://www.facebook.com/jamal.mukarker"> <img src="images/facebook.jpg" alt="my facebook account"   width="70" height="70" ></a><br> please feel free to contact me </p><br>
+</div>
+<hr>
+<div class="column"><br><br>
+ <p><img src="images/mywhats.PNG" alt="my whatsup account"   width="70" height="70"> <br>if you want to contact me by whatsapp, please <strong>scan</strong> code  </p><br>
+</div>
+<hr>
+<div class="column"><br><br>
+ <p><a href="https://www.linkedin.com/in/jessica-mukarker/"> <img src="images/linkend.png" alt="my linkend account"   width="70" height="70"> </a><br> you can contact me also on linkend </p><br>
+</div>
+<hr>
+<div class="column"><br><br>
+ <p> <a href="https://mail.google.com/mail/u/0/#inbox"> <img src="images/gmail.png" alt="my gmail account"   width="70" height="70"> </a> <br>if you want to contact by email please contact me using <strong> 202006932</strong></p></div>
+</div>
+</div>
+</body>
+
+</html>
